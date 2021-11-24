@@ -136,8 +136,8 @@ class Demo extends Component {
             resultPending: true,
         });
 
-        let url = this.state.nonLocalServer === "" ? "http://localhost:5000" : this.state.nonLocalServer;
-        url = "https://" + (url.replace(/(^\w+:|^)\/\//, ''));
+        let url = this.state.nonLocalServer === "" ? "localhost:5000" : this.state.nonLocalServer;
+        url = url.startsWith("localhost") ? "http://" + (url.replace(/(^\w+:|^)\/\//, '')) : "https://" + (url.replace(/(^\w+:|^)\/\//, ''));
 
         this.uploadFile(this.state.selectedBaseImage, url);
         for (let styles of this.state.selectedStyleImages) {
@@ -199,7 +199,7 @@ class Demo extends Component {
                     <p style={{fontSize: "1.5em", fontFamily: "'Karla', sans-serif"}}> Wanna try NST on your own images? Now you can! Simply provide a base image and up to 4 styles to apply the Style Transfer on. </p>
                     <p style={{fontSize: "1em", fontFamily: "'Karla', sans-serif"}}>Not using localhost? Enter the ngrok URL below. Please ensure it's properly formatted before NSTifying it.</p>
                     <p>
-                    <Button variant="light" as="a" type="button" href="https://colab.research.google.com/github/bellaroseee/starry-bird/blob/master/gpuServerProxy.ipynb">
+                    <Button variant="light" as="a" type="button" href="https://colab.research.google.com/github/Kapporing/starry-bird/blob/master/gpuServerProxy.ipynb">
                         Get your ngrok url
                     </Button>
                     </p>

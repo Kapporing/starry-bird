@@ -38,7 +38,7 @@ Then you can run the server by calling `python3 server.py`.
 #### Running through Server Proxy (Google Colab)
 If your computer does not GPU support and you wish to demo still, you can head on to <a href="https://colab.research.google.com/" target="_blank">Google Colab</a>
 and create a new notebook with the contents in `server.py` and the `nst.py`. You will still have to install `flask`, `flask_cors` and `flask_ngrok` in the notebook.
-Alternatively, you can also run the <a href="https://colab.research.google.com/github/Kapporing/starry-bird/blob/master/gpuServerProxy.ipynb#scrollTo=1PXWbXUx-dQA" target="_blank">notebook</a> directly on Google Colab.
+Alternatively, you can also run the <a href="https://colab.research.google.com/github/Kapporing/starry-bird/blob/master/gpuServerProxy.ipynb" target="_blank">notebook</a> directly on Google Colab.
 Make sure to enable GPU acceleration by going into Runtime > Change Runtime Type and change the Hardware Acceleration to GPU.
 <br/><br/>
 Once that is done, run the cell with the `server.py` code. The output of the server should produce an `ngrok` link that looks like `http://<random>.ngrok.io`. Copy this link

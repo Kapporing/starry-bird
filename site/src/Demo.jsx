@@ -146,19 +146,11 @@ class Demo extends Component {
 
         Promise.all(this.currentPromises).then( () => {
             this.currentPromises = [];
-            let config = {
-                headers: {
-                    "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE",
-                    "Access-Control-Allow-Origin": "*",
-                    "Access-Control-Allow-Headers": "Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin,",
-                    "Access-Control-Allow-Credentials": "true"
-                }
-            };
 
             axios.post(url.concat("/api/nst"), {
                 "base_image": this.state.selectedBaseImage.name,
                 "style_images": this.state.selectedStyleImages.map(files => files.name)
-            }, config)
+            })
                 .then(res => {
                     var bytestring = res.data['image']
                     var image = bytestring.split('\'')[1];

@@ -191,7 +191,7 @@ class Demo extends Component {
                     <p style={{fontSize: "1.5em", fontFamily: "'Karla', sans-serif"}}> Wanna try NST on your own images? Now you can! Simply provide a base image and up to 4 styles to apply the Style Transfer on. </p>
                     <p style={{fontSize: "1em", fontFamily: "'Karla', sans-serif"}}>Not using localhost? Enter the ngrok URL below. Please ensure it's properly formatted before NSTifying it.</p>
                     <p>
-                    <Button variant="light" as="a" type="button" href="https://colab.research.google.com/github/Kapporing/starry-bird/blob/master/gpuServerProxy.ipynb" target="_blank">
+                    <Button variant="success" onClick={() => window.open("https://colab.research.google.com/github/Kapporing/starry-bird/blob/master/gpuServerProxy.ipynb", '_blank')}>
                         Get your ngrok url
                     </Button>
                     </p>

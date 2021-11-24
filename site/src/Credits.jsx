@@ -8,7 +8,7 @@ function Credits() {
             <div className="text-center">
                 <h1 style={{fontFamily: "'Fredoka One', cursive"}}> Team & Credits </h1>
                 <br/>
-                <h3 style={{fontFamily: `'Karla', sans-serif`}}> <a href="https://github.com/bellaroseee/vision-project">Code</a> </h3>
+                <h3 style={{fontFamily: `'Karla', sans-serif`}}> <a href="https://github.com/Kapporing/starry-bird">Code</a> </h3>
             </div>
             <Col lg={10} style={{fontFamily: `'Karla', sans-serif`}}>
                 <Row>

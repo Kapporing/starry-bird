@@ -10,7 +10,7 @@ If you plan on running the server locally, you will also want to have GPU suppor
 You will also need to have NodeJS installed for the website to work if you plan on running it locally via `npm`.
 
 ## Website
-To view the website, either visit the [link directly here](https://bellaroseee.github.io/starry-bird/) or by
+To view the website, either visit the [link directly here](https://kapporing.github.io/starry-bird/) or by
 first going into the `site` directory (`cd site`) and then running the Node Package Manager (`npm install` and then `npm start`). Then visit
 the URL `localhost:3000`
 
